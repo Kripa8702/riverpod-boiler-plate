@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:riverpod/riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_boiler_plate/config/flavour_config.dart';
 import 'package:riverpod_boiler_plate/exceptions/exceptions.dart';
 import 'package:riverpod_boiler_plate/utils/pref_utils.dart';

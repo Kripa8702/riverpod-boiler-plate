@@ -29,7 +29,7 @@ class AppRoutes {
 
       case AppRoutes.loginScreen:
         return MaterialPageRoute(
-          builder: (context) => LoginScreen(),
+          builder: (context) => const LoginScreen(),
           settings: settings,
         );
       case AppRoutes.landingPageScreen:

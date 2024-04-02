@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_boiler_plate/constants/form_values.dart';
 import 'package:riverpod_boiler_plate/features/authentication/login/controller/login_controller.dart';
 import 'package:riverpod_boiler_plate/features/widgets/widgets.dart';
 import 'package:riverpod_boiler_plate/localizations/app_localization.dart';
@@ -20,9 +21,11 @@ class LoginScreen extends ConsumerStatefulWidget {
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
-  final TextEditingController emailController = TextEditingController();
+  final TextEditingController emailController =
+      TextEditingController(text: FormValues.username);
 
-  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController passwordController =
+      TextEditingController(text: FormValues.password);
 
   bool onSubmit = false;
 

@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_boiler_plate/features/authentication/model/user_model.dart';
@@ -43,7 +42,6 @@ class LoginController extends StateNotifier<LoginState> {
       state = state.copyWith(status: LoginStatus.success, user: user);
     }  catch (e) {
       ToastUtils.showToast(e.toString());
-
       state = state.copyWith(status: LoginStatus.error, error: e.toString());
     }
   }
